@@ -1,0 +1,214 @@
+/* Media queries for different screen sizes */
+
+/* Large screens (computers and tablets in landscape) */
+@media screen and (max-width: 1230px) {
+    #home h1 {
+      font-size: 6rem;
+    }
+    
+    #home h2 {
+      font-size: 2.5rem;
+    }
+    
+    #heading {
+      font-size: 1.5rem;
+    }
+    
+    .heading {
+      font-size: 3.5rem;
+    }
+  }
+  
+  /* Medium-sized screens (tablets and small laptops) */
+  @media screen and (max-width: 1080px) {
+    .left-half-circle {
+      right: -65%;
+    }
+    
+    p {
+      font-size: 1.2rem;
+    }
+    
+    #home h1 {
+      font-size: 5rem;
+    }
+    
+    .eye-containers {
+      right: 8%;
+    }
+    
+    .eye-container {
+      width: 5rem;
+      height: 5rem;
+    }
+    
+    .eye {
+      width: 1.2rem;
+      height: 1.5rem;
+    }
+    
+    .navbar ul {
+      width: 70%;
+    }
+  }
+  
+  /* Tablets and large mobile phones */
+  @media screen and (max-width: 768px) {
+    section {
+      margin-left: 0;
+    }
+    
+    .name-div {
+      width: 0;
+      display: none;
+    }
+    
+    .name {
+      display: none;
+    }
+    
+    .navbar ul {
+      width: 100%;
+      padding: 0 1rem;
+    }
+    
+    .navbar ul a {
+      font-size: 1.2rem;
+    }
+    
+    .section-div {
+      width: 90%;
+      margin: 0 auto;
+    }
+    
+    .home-div {
+      flex-direction: column;
+    }
+    
+    .text {
+      width: 90%;
+      margin: 0 auto;
+      padding-top: 4rem;
+      height: auto;
+    }
+    
+    #home h1 {
+      font-size: 4rem;
+    }
+    
+    #home h2 {
+      font-size: 2rem;
+    }
+    
+    .cirlce {
+      width: 100%;
+      height: 50%;
+    }
+    
+    .left-half-circle {
+      position: relative;
+      right: -25%;
+      height: 90%;
+    }
+    
+    .eye-containers {
+      right: 20%;
+      top: 25%;
+    }
+    
+    .contact-div {
+      flex-direction: column;
+      height: 80%;
+    }
+    
+    .contact-container {
+      width: 100%;
+      flex-direction: row;
+      margin-bottom: 1rem;
+    }
+    
+    .email-container {
+      width: 100%;
+      height: 80%;
+    }
+  }
+  
+  /* Mobile phones */
+  @media screen and (max-width: 480px) {
+    .navbar {
+      height: auto;
+    }
+    
+    .navbar ul {
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem 0;
+      background-color: rgb(105, 101, 102);
+      height: auto;
+      position: absolute;
+      top: 2.8rem;
+      transform: translateY(-100%);
+      transition: transform 0.3s ease;
+    }
+    
+    .navbar ul.active {
+      transform: translateY(0);
+    }
+    
+    .navbar li {
+      margin: 0.5rem 0;
+    }
+    
+    .hamburger {
+      display: block;
+      position: absolute;
+      right: 1rem;
+      top: 0.8rem;
+      cursor: pointer;
+    }
+    
+    #home h1 {
+      font-size: 3rem;
+      letter-spacing: 0.2rem;
+    }
+    
+    #heading {
+      font-size: 1.2rem;
+      letter-spacing: 0.3rem;
+    }
+    
+    .heading {
+      font-size: 2.5rem;
+    }
+    
+    .eye-containers {
+      right: 10%;
+    }
+    
+    .eye-container {
+      width: 4rem;
+      height: 4rem;
+      margin: 10px;
+    }
+    
+    .eye {
+      width: 1rem;
+      height: 1.2rem;
+    }
+    
+    .project-card {
+      width: 100%;
+    }
+    
+    .resume-btn {
+      font-size: 1.2rem;
+    }
+    
+    .about h2 {
+      font-size: 1.8rem;
+    }
+    
+    input, textarea, .form-button {
+      font-size: 1.2rem;
+    }
+  }
