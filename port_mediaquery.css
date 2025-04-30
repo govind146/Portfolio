@@ -1,7 +1,7 @@
 /* Media queries for different screen sizes */
 
 /* Large screens (computers and tablets in landscape) */
-@media screen and (max-width: 1230px) {
+@media screen and (max-width: 1231px) {
     #home h1 {
       font-size: 6rem;
     }
