@@ -1,7 +1,7 @@
 /* Media queries for different screen sizes */
 
 /* Large screens (computers and tablets in landscape) */
-@media screen and (max-width: 1231px) {
+@media screen and (max-width: 1230px) {
     #home h1 {
       font-size: 6rem;
     }
@@ -20,9 +20,22 @@
   }
   
   /* Medium-sized screens (tablets and small laptops) */
-  @media screen and (max-width: 1080px) {
+  @media screen and (max-width: 992px) {
     .left-half-circle {
-      right: -65%;
+      /* right: -65%; */
+      display: none;
+    }
+    .sweat-drop{
+      display: none;
+    }
+    .cirlce{
+     width: 0;
+    }
+    .home-div{
+      width: 100%;
+    }
+    .section-div{
+      width: 88%;
     }
     
     p {
