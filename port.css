@@ -488,8 +488,11 @@ textarea{
     height: 70%;
 }
 .skill-card:hover{
-    transform: scale(1.1);
+   img{
+    transform-origin:bottom;
+    transform: scale(1.6);
     transition: transform 0.3s ease;
+   }
 }
 
 
