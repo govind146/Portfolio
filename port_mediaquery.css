@@ -1,7 +1,8 @@
 /* Media queries for different screen sizes */
 
 /* Large screens (computers and tablets in landscape) */
-@media screen and (max-width: 1230px) {
+@media screen and (max-width: 1080px) {
+ 
     #home h1 {
       font-size: 6rem;
     }
@@ -21,6 +22,16 @@
   
   /* Medium-sized screens (tablets and small laptops) */
   @media screen and (max-width: 992px) {
+    .contact-div{
+      width: 70%;
+      height: 80%;
+    }
+    /* .name-div{
+      width: 10%;
+    } */
+   p{
+    font-size: 1.2rem;
+   }
     .left-half-circle {
       /* right: -65%; */
       display: none;
@@ -28,58 +39,73 @@
     .sweat-drop{
       display: none;
     }
+    .logo-home{
+      display: none;
+    }
+    .logo-nav{
+    
+      width: 9rem ;
+      height: 9rem;
+      position: fixed;
+      right: 0;
+      top: 3.1rem;
+      z-index: -1;
+      border-bottom: .5rem solid rgb(234, 91, 9);
+      border-left: .5rem solid rgb(234, 91, 9);  
+      border-radius:50% 0 0 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: rgb(56 55 55);
+  }
+  .logo-nav img{
+      z-index: -1;
+      position: relative;
+      width: 90%;
+      height: 90%;
+      border-radius:50% 0 0 50%;
+  }
+  
+    
     .cirlce{
      width: 0;
+     height: 0;
     }
-    .home-div{
-      width: 100%;
+    .text{
+      width: 90%;
     }
     .section-div{
-      width: 88%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
-    
-    p {
-      font-size: 1.2rem;
-    }
-    
-    #home h1 {
-      font-size: 5rem;
-    }
-    
-    .eye-containers {
-      right: 8%;
-    }
-    
-    .eye-container {
-      width: 5rem;
-      height: 5rem;
-    }
-    
-    .eye {
-      width: 1.2rem;
-      height: 1.5rem;
-    }
+  
     
     .navbar ul {
       width: 70%;
+    }
+    .navbar ul li a{
+      font-size: 1.2rem;
     }
   }
   
   /* Tablets and large mobile phones */
   @media screen and (max-width: 768px) {
-    section {
+    .section {
       margin-left: 0;
     }
-    
-    .name-div {
-      width: 0;
-      display: none;
+    .logo{
+      height: 7rem;
+      width: 7rem;
+      top: 2.3rem;
     }
-    
-    .name {
-      display: none;
+    .navbar{
+      height: 2rem;
     }
-    
+    .section-div{
+      padding-top: 2.4rem;
+    }
     .navbar ul {
       width: 100%;
       padding: 0 1rem;
@@ -87,15 +113,6 @@
     
     .navbar ul a {
       font-size: 1.2rem;
-    }
-    
-    .section-div {
-      width: 90%;
-      margin: 0 auto;
-    }
-    
-    .home-div {
-      flex-direction: column;
     }
     
     .text {
@@ -113,22 +130,7 @@
       font-size: 2rem;
     }
     
-    .cirlce {
-      width: 100%;
-      height: 50%;
-    }
-    
-    .left-half-circle {
-      position: relative;
-      right: -25%;
-      height: 90%;
-    }
-    
-    .eye-containers {
-      right: 20%;
-      top: 25%;
-    }
-    
+
     .contact-div {
       flex-direction: column;
       height: 80%;
@@ -144,24 +146,35 @@
       width: 100%;
       height: 80%;
     }
+    .navbar ul{
+      display: none;
+    }
+    .hamburger{
+      z-index: 10;
+      display: block;
+    }
+    .hamburger .line{
+      width: 2rem;
+      height: 0.2rem;
+      border-radius: 0.2rem;
+      background-color: rgb(255, 255, 255);
+      margin: 0.5rem 0;
+    } 
+
   }
-  
+  /*  */
   /* Mobile phones */
   @media screen and (max-width: 480px) {
     .navbar {
-      height: auto;
+      height: 2rem;
+    }
+    .logo{
+      height: 5rem;
+      width: 5rem;
     }
     
     .navbar ul {
-      flex-direction: column;
-      align-items: center;
-      padding: 1rem 0;
-      background-color: rgb(105, 101, 102);
-      height: auto;
-      position: absolute;
-      top: 2.8rem;
-      transform: translateY(-100%);
-      transition: transform 0.3s ease;
+    display: none;
     }
     
     .navbar ul.active {
