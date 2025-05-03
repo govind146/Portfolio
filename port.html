@@ -25,6 +25,18 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
+    <div class="small-screen">
+        
+        <ul>
+            <li class="home-li"><a href="#home">HOME</a></li>
+            <li class="about-li"><a href="#about">ABOUT</a></li>
+            <li class="projects-li"><a href="#projects">PROJECTS</a></li>
+            <li class="skills-li"><a href="#skills">SKILLS</a></li>
+            <li class="contact-li"><a href="#contact">CONTACT</a></li>
+        </ul>
+
+        <!-- <h1>Please open this website in a larger screen</h1> -->
+    </div>
     <!-- < class="navcopy"> -->
     <!-- <div class="navcopy2"></div> -->
     <nav class="navbar">
@@ -72,7 +84,7 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
                 </h3>
                 <br>
 
-                <p><b>"Hi, I'm [Your Name], an aspiring web designer passionate about creating simple and user-friendly
+                <p><b>"An aspiring web designer passionate about creating simple and user-friendly
                         websites. As a beginner, I'm constantly learning and exploring new ways to bring ideas to life
                         through design and code. Welcome to my journey in web design!"</p>
                 </b><br>
@@ -166,12 +178,19 @@ crossorigin="anonymous" referrerpolicy="no-referrer" />
                 <span><a href="https://discord.gg/jaPGu6FM"><i class="fa-brands fa-discord"></a></i></span>
             </div>
             <div class="email-container">
-                <form action="">
+                <!-- <form action="">
                     <input type="text" placeholder="Name">
                     <input type="email" placeholder="Email">
                     <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
                     <button type="submit" class="form-button">Send</button>
-                </form>
+                </form> -->
+
+                <form action="https://formsubmit.co/9e357c284c73aee8c5cfa5d4c3d3c371" method="POST">
+                    <input type="text" name="name" placeholder="Name" required>
+                    <input type="email" name="email" placeholder="Email" required>
+                    <textarea name="message"  cols="30" rows="10" placeholder="Message" required></textarea>
+                    <button type="submit" class="form-button">Send</button>
+               </form>
             </div>
         </div>
         </div>

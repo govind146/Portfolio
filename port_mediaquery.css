@@ -160,6 +160,24 @@
       background-color: rgb(255, 255, 255);
       margin: 0.5rem 0;
     } 
+    .active{
+     
+      animation: actives .5s ease-in-out;
+      animation-fill-mode: forwards;
+    }
+    @keyframes actives{
+      from{
+        transform: translateX(100%);
+      }
+      to{
+        transform: translateX(0);
+      }
+    }
+    .small-screen{
+      width: 25%;
+    }
+    
+   
 
   }
   /*  */
@@ -189,10 +207,26 @@
       display: block;
       position: absolute;
       right: 1rem;
-      top: 0.8rem;
+      /* top: 0.1rem; */
       cursor: pointer;
+      transform: scale(0.8);
     }
     
+    .active{
+     
+      animation: actives .5s ease-in-out;
+      animation-fill-mode: forwards;
+    }
+    @keyframes actives{
+      from{
+        transform: translateX(100%);
+      }
+      to{
+        transform: translateX(0);
+      }
+    }
+  
+
     #home h1 {
       font-size: 3rem;
       letter-spacing: 0.2rem;

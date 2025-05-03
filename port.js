@@ -308,4 +308,8 @@ observer.observe(section);
 //     setupMobileNav();
 //   });
 
-
+let small_screen = document.querySelector(".small-screen");
+let hamburger = document.querySelector(".hamburger");
+hamburger.addEventListener("click", () => {
+  small_screen.classList.toggle("active");
+});

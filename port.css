@@ -11,6 +11,7 @@
 
 body{
     height: 100vh;
+    /* width: 100vw; */
     overflow-x: hidden;
 }
 .hamburger{
@@ -27,11 +28,48 @@ body{
     background-color: rgb(255, 255, 255);
     margin: 0 .1rem 0;
 }
+.hamburger:hover{
+    .small-screen{
+    
+       /* top: 100%; */
+      }
+  
+    }
+.small-screen{
+    border-radius: 0  1rem 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* height: fit-content; */
+    width: 30%;
+    background-color: rgb(56 55 55);
+    position: fixed;
+    transform: translateX(110%);
+    top: 2.2rem;
+    right : 0;
+    z-index: 11;
+  }
+  .small-screen ul{
+    display: flex;
+    justify-content: flex-start;
+    /* align-items: center; */
+    flex-direction: column;
+  }
+  .small-screen ul li{
+    /* font-size: 3rem; */
+    list-style: none;
+    margin: 0.3rem 0;
+  }
+  .small-screen ul li a{
+    font-size: 1rem;
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+  } 
 
 
 section{
-    height: 100%;
-    width: 100%;
+    height: 95%;
+    /* width: 100%; */
     /* border: 1px solid red; */
     display: flex;
     justify-content: flex-start;
@@ -56,7 +94,7 @@ section{
     animation: appear linear;
     animation-timeline: view();
     animation-range: entry 0% cover 40% ;
-    transition: transform 5s ease;
+    transition: transform ease;
 }
 
 @keyframes appear{
@@ -151,7 +189,7 @@ ul a{
 .home-div{
     display: flex;
     height: 100%;
-    padding-left: 9%;
+    margin-left: 9%;
 }
 .text{
     padding-top: 2.8rem;
@@ -229,7 +267,7 @@ ul a{
     padding-left: .5rem;
     padding-right: .5rem;
     border-radius: .05rem;
-    letter-spacing: .7rem;
+    letter-spacing: .5rem;
 }
  p{
     font-size: clamp(1rem, 10vw, 1.5rem);
@@ -240,7 +278,7 @@ ul a{
 .bold{
     color: rgb(234, 91, 9);
      font-family: "Roboto Condensed";
-    font-family: "Rubik Vinyl";
+    font-family: "Rubik Vinyl","Roboto Condensed";
      
 }
 .cirlce{
@@ -400,7 +438,8 @@ background-color: #ad1111;
     height: 100%;
 }
 
-.resume-btn{
+.resume-btn {
+   
     /* width: fit-content; */
     display: flex;
     justify-content: center;
@@ -414,6 +453,10 @@ background-color: #ad1111;
    
     font-size: 1.5rem;
     cursor: pointer;
+}
+.resume-btn a{
+    text-decoration: none;
+    color: white;
 }
 
 
@@ -438,7 +481,7 @@ background-color: #ad1111;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    border: 1px solid rgb(0, 0, 0);
+    /* border: 1px solid rgb(0, 0, 0); */
     align-self: flex-start;
 }
 .contact-container{
@@ -466,7 +509,7 @@ background-color: #ad1111;
 .email-container{
     width: 90%;
     height: 90%;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     background-color: #e0e0e0;
     display: flex;
     justify-content: center;
