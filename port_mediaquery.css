@@ -212,7 +212,9 @@
       cursor: pointer;
       transform: scale(0.8);
     }
-    
+    .hamburger ul li a{
+      margin-left: .2rem;
+    }
     .active{
      
       animation: actives .5s ease-in-out;
@@ -273,3 +275,24 @@
       font-size: 1.2rem;
     }
   }
+  @media screen and (max-width: 420px) {
+    .small-screen ul li a{
+      margin-left: .1rem;
+      font-size: .8rem;
+    }
+  }
+  @media screen and (max-width: 375px) {
+    .small-screen ul li a{
+      font-size: .7rem;
+    }
+  }
+  @media screen and (max-width: 320px) {
+    .small-screen ul li a{
+      font-size: .6rem;
+    }
+  }
+  @media screen and (max-width: 280px) {
+    .small-screen ul li a{
+      font-size: .5rem;
+    }
+  } 
